@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>PosturePal Settings</title>
+    <style>
+        body {
+            width: 200px;
+            padding: 10px;
+            font-family: Arial, sans-serif;
+        }
+
+        label,
+        input {
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Settings</h3>
+    <p id="current-interval"></p>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+    <label for="interval">Reminder Interval (minutes):</label>
+    <input type="number" id="interval" min="1" max="120">
+    <button id="save">Save</button>
+    <span id="success-message" style="color: green;"></span>
+    <script src="popup.js"></script>
+</body>
+
+</html>
+
+<style>
+    .saved {
+        background-color: green !important;
+    }
+    #success-message {
+    color: green;
+    margin-top: 5px;
+    }
+</style>
